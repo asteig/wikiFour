@@ -10,9 +10,9 @@
 		
 		_init = function() {
 			
-			var cols;
+			var columns;
 			
-			cols = document.querySelectorAll('.column');
+			columns = document.querySelectorAll('.column');
 			
 			Array.prototype.forEach.call(columns, function(col) {
 				col.addEventListener('click', function() {
