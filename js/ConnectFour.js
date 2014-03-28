@@ -128,7 +128,9 @@
 				
 				var i = 1;
 
-				while( isBounds(currentX + (coords[0] * i), currentY + (coords[1] * i)) && (gameBoard[currentX + (coords[0] * i)][currentY + (coords[1] * i)] === currentPlayer)) {
+				while( isBounds(currentX + (coords[0] * i), currentY + (coords[1] * i)) && 
+					(gameBoard[currentX + (coords[0] * i)][currentY + (coords[1] * i)] === currentPlayer)
+				) {
 					chainLength = chainLength + 1; 
 					i = i + 1; 
 				};
