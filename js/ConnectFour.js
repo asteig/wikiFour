@@ -51,7 +51,9 @@
 			
 			gameBoard[x][nextY] = currentPlayer;
 			
-			document.querySelector('#column-'+x+' .row-'+nextY+' circle').setAttribute('class', currentPlayer);
+			document.querySelector('#column-'+x+' .row-'+nextY+' circle').setAttribute(
+					'class', currentPlayer
+			);
 			
 			if(isWinner(parseInt(x), nextY)) {
 				alert(currentPlayer+' wins!');
@@ -95,7 +97,9 @@
 		};
 
 		var isWinner = function(currentX, currentY) {
-			return checkDirection(currentX, currentY, 'vertical') || checkDirection(currentX, currentY, 'diagonal') || checkDirection(currentX, currentY, 'horizontal');
+			return checkDirection(currentX, currentY, 'vertical') || 
+				checkDirection(currentX, currentY, 'diagonal') || 
+				checkDirection(currentX, currentY, 'horizontal');
 		};
 		
 		var isBounds = function(x, y) {
